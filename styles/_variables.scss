@@ -1,0 +1,20 @@
+:root {
+  --color-off-white: #eee;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-accent-red: #b4240d;
+  --color-accent-yellow: #fbb606;
+  --color-accent-yellow-light: #ffc530;
+  --color-card-bg: #172131;
+  --color-card-text: #7898c9;
+  --color-artist-text: #90a8bb;
+
+  --time-hover: 150ms;
+
+  --section-padding-bottom: 16rem;
+  --max-width: 1110px;
+
+  @media screen and (max-width: 720px) {
+    --section-padding-bottom: 8rem;
+  }
+}
