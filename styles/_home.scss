@@ -76,6 +76,16 @@ header {
     flex-shrink: 0;
     color: var(--color-off-white);
     text-decoration: none;
+    --glow: rgba(255 255 255 / 0.3);
+    transition-property: text-shadow filter;
+    transition-timing-function: ease;
+    transition-duration: 1000ms;
+
+    &:hover {
+      transition-duration: 150ms;
+      text-shadow: 0 0 24px var(--glow);
+      filter: brightness(2);
+    }
   }
 
   .socials {
