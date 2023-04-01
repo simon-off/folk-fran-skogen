@@ -31,7 +31,7 @@ const lineUp = [
     longDescription: ``,
     img: "wilhelm.jpg",
     instagramUrl: "https://www.instagram.com/vvllhelm/",
-    spotifyUrl: "#",
+    spotifyUrl: null,
   },
   {
     name: "Wilma Holmes",
@@ -40,7 +40,7 @@ const lineUp = [
     longDescription: ``,
     img: "wilma-holmes.jpg",
     instagramUrl: "https://www.instagram.com/wilmaaholmes/",
-    spotifyUrl: "#",
+    spotifyUrl: null,
   },
   {
     name: "Eternal Wonder",
