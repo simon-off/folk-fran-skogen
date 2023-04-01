@@ -23,7 +23,7 @@ body {
   border-radius: 16px;
   line-height: 1;
   cursor: pointer;
-  transition-property: background-color color;
+  transition-property: background-color, color;
   transition-duration: var(--time-hover);
   transition-timing-function: ease;
   text-decoration: none;
@@ -78,7 +78,7 @@ header {
     color: var(--color-off-white);
     text-decoration: none;
     --glow: rgba(255 255 255 / 0.3);
-    transition-property: text-shadow filter;
+    transition-property: text-shadow, filter;
     transition-timing-function: ease;
     transition-duration: 1000ms;
 
@@ -109,7 +109,7 @@ header {
   a {
     border-radius: 8px;
     --glow: rgba(255 255 255 / 0.3);
-    transition-property: box-shadow filter;
+    transition-property: box-shadow, filter;
     transition-timing-function: ease;
     transition-duration: 1000ms;
 
@@ -413,6 +413,30 @@ section {
 
 footer {
   display: flex;
-  justify-content: center;
-  padding-bottom: 3rem;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 4rem;
+  gap: 2rem;
+
+  .sponsors {
+    text-align: center;
+    color: #dbe5f4;
+    max-width: 450px;
+
+    span {
+      white-space: nowrap;
+    }
+
+    span::after {
+      content: " |";
+    }
+
+    span:last-child::after {
+      content: "";
+    }
+  }
+
+  span {
+    color: #7b8eae;
+  }
 }
