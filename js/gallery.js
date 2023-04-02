@@ -5,16 +5,27 @@ const lineUpSection = document.querySelector("#line-up");
 
 const modal = document.createElement("div");
 modal.classList.add("modal");
-modal.innerHTML = `<p>HEJ HALLÅ</p>`;
-modal.style.display = "none";
+
+const fadeOut = () => {
+  modal.classList.add("fade-out");
+  modal.ontransitionend = () => {
+    if (modal.classList.contains("fade-out")) {
+      modal.classList.remove("fade-out");
+      modal.classList.remove("visible");
+      modal.ontransitionend = null;
+    }
+  };
+};
+
 modal.addEventListener("click", () => {
-  modal.style.display = "none";
+  fadeOut();
 });
 document.addEventListener("keydown", (e) => {
   if (e.key == "Escape") {
-    modal.style.display = "none";
+    fadeOut();
   }
 });
+
 lineUpSection.appendChild(modal);
 
 for (let artist of lineUp) {
@@ -26,7 +37,8 @@ for (let artist of lineUp) {
   `;
 
   galleryItem.addEventListener("click", () => {
-    modal.style.display = "grid";
+    modal.classList.remove("fade-out");
+    modal.classList.add("visible");
     modal.innerHTML = `
     <div class="modal-inner">
       <button><img src="./logos/cross.svg" alt="close button"/></button>

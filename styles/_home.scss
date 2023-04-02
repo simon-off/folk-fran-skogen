@@ -24,12 +24,13 @@ body {
   line-height: 1;
   cursor: pointer;
   transition-property: background-color, color;
-  transition-duration: var(--time-hover);
+  transition-duration: 600ms;
   transition-timing-function: ease;
   text-decoration: none;
 }
 
 .button:hover {
+  transition-duration: var(--time-hover);
   background-color: var(--color-accent-yellow);
   color: var(--color-black);
 }
@@ -111,10 +112,10 @@ header {
     --glow: rgba(255 255 255 / 0.3);
     transition-property: box-shadow, filter;
     transition-timing-function: ease;
-    transition-duration: 1000ms;
+    transition-duration: 800ms;
 
     &:hover {
-      transition-duration: 150ms;
+      transition-duration: 100ms;
       box-shadow: 0 0 24px var(--glow), inset 0 0 24px var(--glow);
       filter: brightness(2);
     }
@@ -172,6 +173,14 @@ section {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    cursor: pointer;
+
+    &:hover {
+      img {
+        transition-duration: var(--time-hover);
+        box-shadow: 0 0 32px rgba(120, 152, 201, 0.2);
+      }
+    }
 
     img {
       width: 100%;
@@ -179,6 +188,7 @@ section {
       object-fit: cover;
       object-position: center;
       border-radius: 8px;
+      transition: box-shadow 800ms ease;
     }
 
     p {
@@ -415,7 +425,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
   gap: 2rem;
 
   .sponsors {
@@ -438,5 +448,14 @@ footer {
 
   span {
     color: #7b8eae;
+  }
+
+  a {
+    color: #7b8eae;
+    transition: color var(--time-hover) ease;
+
+    &:hover {
+      color: #c6dbff;
+    }
   }
 }
