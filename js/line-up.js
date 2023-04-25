@@ -1,5 +1,14 @@
 const lineUp = [
   {
+    name: "Diane Emerita",
+    shortDescription:
+      "Diane Emeritas äventyrliga råa sound härrör från alternativa popstrukturer, hennes klassiska pianouppväxt och en själfull sång.",
+    longDescription: ``,
+    img: "diane-emerita.jpg",
+    instagramUrl: "https://www.instagram.com/dianeemerita/",
+    spotifyUrl: "https://open.spotify.com/artist/3LhfJfuhr6OZLHrpCXIyuH",
+  },
+  {
     name: "Tiger & Träden",
     shortDescription:
       "Sjunger om livet och kärleken. Melodierna och rytmerna är själens flykt från kroppen.",
