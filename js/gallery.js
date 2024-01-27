@@ -33,7 +33,7 @@ for (let artist of lineUp) {
   galleryItem.classList.add("gallery-item");
   galleryItem.innerHTML = `
   <img src="./images/artists/${artist.img}" alt="${artist.name}"/>
-  <p><span>${artist.name} | </span>${artist.shortDescription}</p>
+  <p><span>${artist.name} | </span>${artist.description}</p>
   `;
 
   galleryItem.addEventListener("click", () => {
@@ -43,7 +43,7 @@ for (let artist of lineUp) {
     <div class="modal-inner">
       <button><img src="./logos/cross.svg" alt="close button"/></button>
       <img src="./images/artists/${artist.img}" alt="${artist.name}"/>
-      <p><span>${artist.name} | </span>${artist.shortDescription}</p>
+      <p><span>${artist.name} | </span>${artist.description}</p>
       <div class="links">
         <a target="_blank" href="${artist.instagramUrl}"
           ><img src="./logos/instagram.svg" alt="instagram logo"
