@@ -1,8 +1,8 @@
 const mlink = document.getElementById("mlink");
 const pnumber = document.getElementById("pnumber");
 
-const me = "folkfranskogen";
-const place = "gmail.com";
+const me = "kontakt";
+const place = "folkfranskogen.se";
 const phone1 = "+46";
 const phone2 = 733427860;
 
