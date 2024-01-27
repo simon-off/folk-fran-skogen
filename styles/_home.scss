@@ -370,8 +370,9 @@ section {
       object-fit: cover;
       object-position: bottom;
       @media screen and (max-width: 500px) {
+        // TODO: Använd width här istället
         scale: 1.3;
-        translate: 0 -30px;
+        translate: 0 -25px;
       }
     }
   }

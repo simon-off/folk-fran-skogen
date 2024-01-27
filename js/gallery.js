@@ -43,19 +43,24 @@ for (let artist of lineUp) {
     <div class="modal-inner">
       <button><img src="./logos/cross.svg" alt="close button"/></button>
       <img src="./images/artists/${artist.img}" alt="${artist.name}"/>
-      <p><span>${artist.name} | </span>${artist.description}</p>
-      <div class="links">
-        <a target="_blank" href="${artist.instagramUrl}"
-          ><img src="./logos/instagram.svg" alt="instagram logo"
-        /></a>
-        ${
-          artist.spotifyUrl
-            ? `<a target="_blank" href="${artist.spotifyUrl}"
-          ><img src="./logos/spotify.svg" alt="spotify logo"
-        /></a>`
-            : ""
-        }
+      <div class="modal-header">
+        <h3>${artist.name}</h3>
+        <div class="links">
+          <a target="_blank" href="${artist.instagramUrl}">
+            <img src="./logos/instagram.svg" alt="instagram logo"/>
+            instagram
+          </a>
+          ${
+            artist.spotifyUrl
+              ? `<a target="_blank" href="${artist.spotifyUrl}">
+            <img src="./logos/spotify.svg" alt="spotify logo"/>
+            spotify
+          </a>`
+              : ""
+          }
+        </div>
       </div>
+      <p>${artist.description}</p>
     </div>
     `;
   });
