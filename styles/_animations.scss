@@ -1,0 +1,82 @@
+/*===========================================================*/
+/*+++ CONFIG +++||-------------------------------------------*/
+/*===========================================================*/
+
+$slide-in-size: 8px;
+$default-duration: 2s;
+$cubic-bezier: cubic-bezier(0.4, 0.3, 0.1, 1.05);
+
+/*===========================================================*/
+/*+++ ANIMATIONS +++||---------------------------------------*/
+/*===========================================================*/
+
+// prettier-ignore
+$animations: (
+  fade-in: (
+    0%: (opacity: 0),
+    100%: (opacity: 1)
+  ),
+  slide-in-top: (
+    0%: (transform: translateY(-$slide-in-size), opacity: 0),
+    100%: (opacity: 1, transform: translateY(0))
+  ),
+  slide-in-bottom: (
+    0%: (transform: translateY($slide-in-size), opacity: 0),
+    100%: (opacity: 1, transform: translateY(0))
+  ),
+  slide-in-left: (
+    0%: (transform: translateX(-$slide-in-size), opacity: 0),
+    100%: (opacity: 1, transform: translateX(0))
+  ),
+  slide-in-right: (
+    0%: (transform: translateX($slide-in-size), opacity: 0),
+    100%: (opacity: 1, transform: translateX(0))
+  ),
+  scale-subtle: (
+    0%: (scale: 0.99, opacity: 0),
+    100%: (scale: 1, opacity: 1)
+  ),
+  scale: (
+    0%: (scale: 0.96, opacity: 0),
+    100%: (scale: 1, opacity: 1)
+  ),
+  scale-heavy: (
+    0%: (scale: 0.8, opacity: 0),
+    100%: (scale: 1, opacity: 1)
+  )
+);
+
+/*===========================================================*/
+/*+++ ANIMATION CLASSES +++||--------------------------------*/
+/*===========================================================*/
+
+@each $name, $animation in $animations {
+  @keyframes #{$name} {
+    @each $percent, $properties in $animation {
+      #{$percent} {
+        @each $property, $value in $properties {
+          #{$property}: $value;
+        }
+      }
+    }
+  }
+}
+
+@each $name, $_ in $animations {
+  .#{$name} {
+    @media (prefers-reduced-motion: no-preference) {
+      opacity: 0;
+      &.observed {
+        animation: #{$name} $default-duration $cubic-bezier forwards;
+      }
+    }
+  }
+}
+
+@for $i from 1 through 16 {
+  .ad-#{$i} {
+    &.observed {
+      animation-duration: 250ms * $i;
+    }
+  }
+}

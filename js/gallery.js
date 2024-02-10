@@ -32,7 +32,7 @@ lineUpSection.appendChild(modal);
 
 for (let artist of lineUp) {
   const galleryItem = document.createElement("button");
-  galleryItem.classList.add("gallery-item");
+  galleryItem.classList.add("gallery-item", "observe", "scale-subtle", "ad-6");
   galleryItem.innerHTML = `
   <img src="./images/artists/${artist.img}" alt="${artist.name}"/>
   <p><span>${artist.name} | </span>${artist.description}</p>
