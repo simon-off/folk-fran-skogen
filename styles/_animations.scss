@@ -74,7 +74,7 @@ $animations: (
 }
 
 @for $i from 1 through 16 {
-  .ad-#{$i} {
+  .duration-#{$i} {
     &.observed {
       animation-duration: 250ms * $i;
     }
