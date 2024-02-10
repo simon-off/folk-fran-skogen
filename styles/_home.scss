@@ -173,6 +173,10 @@ section {
   }
 
   .gallery-item {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    text-align: left;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -196,6 +200,10 @@ section {
 
     p {
       color: var(--color-artist-text);
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
     span {

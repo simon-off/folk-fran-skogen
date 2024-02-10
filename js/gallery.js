@@ -17,8 +17,10 @@ const fadeOut = () => {
   };
 };
 
-modal.addEventListener("click", () => {
-  fadeOut();
+modal.addEventListener("click", (e) => {
+  if (e.target == modal || e.target.closest("button")) {
+    fadeOut();
+  }
 });
 document.addEventListener("keydown", (e) => {
   if (e.key == "Escape") {
@@ -29,7 +31,7 @@ document.addEventListener("keydown", (e) => {
 lineUpSection.appendChild(modal);
 
 for (let artist of lineUp) {
-  const galleryItem = document.createElement("div");
+  const galleryItem = document.createElement("button");
   galleryItem.classList.add("gallery-item");
   galleryItem.innerHTML = `
   <img src="./images/artists/${artist.img}" alt="${artist.name}"/>
