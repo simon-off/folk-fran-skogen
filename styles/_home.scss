@@ -20,7 +20,7 @@ body {
   border: 3px solid var(--color-accent-yellow);
   color: var(--color-accent-yellow);
   padding: 1rem 3rem;
-  border-radius: 16px;
+  border-radius: 12px;
   line-height: 1;
   cursor: pointer;
   transition-property: background-color, color;
@@ -97,6 +97,7 @@ header {
 
   .logo {
     width: clamp(300px, 55vh, 540px);
+    filter: drop-shadow(0 0 128px #397ce03d) drop-shadow(0 0 8px #ffe58f25);
   }
 }
 
@@ -373,15 +374,11 @@ section {
     overflow: hidden;
     border-radius: 8px;
     img {
-      max-height: 520px;
       width: 100%;
+      min-height: 250px;
+      max-height: 500px;
       object-fit: cover;
       object-position: bottom;
-      @media screen and (max-width: 500px) {
-        // TODO: Använd width här istället
-        scale: 1.3;
-        translate: 0 -25px;
-      }
     }
   }
 
@@ -434,6 +431,7 @@ section {
   }
 
   .button {
+    font-size: 1.25rem;
     @media screen and (max-width: 500px) {
       margin-top: 1rem;
     }
@@ -446,6 +444,10 @@ footer {
   flex-direction: column;
   padding-bottom: 3rem;
   gap: 2rem;
+
+  & > img {
+    filter: drop-shadow(0 0 48px #4e86d94f);
+  }
 
   .sponsors {
     text-align: center;
