@@ -69,3 +69,8 @@ for (let artist of lineUp) {
 
   galleryElement.appendChild(galleryItem);
 }
+
+if (lineUp.length === 0) {
+  document.querySelector("a[href='#line-up']").style.display = "none";
+  lineUpSection.style.display = "none";
+}
