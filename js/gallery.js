@@ -62,7 +62,7 @@ for (let artist of lineUp) {
           }
         </div>
       </div>
-      <p>${artist.description}</p>
+      <p>${artist.description.replace(/\n/g, "<br>")}</p>
     </div>
     `;
   });
