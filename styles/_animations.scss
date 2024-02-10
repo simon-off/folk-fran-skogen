@@ -76,7 +76,7 @@ $animations: (
 @for $i from 1 through 16 {
   .duration-#{$i} {
     &.observed {
-      animation-duration: 250ms * $i;
+      animation-duration: 200ms * $i;
     }
   }
 }
