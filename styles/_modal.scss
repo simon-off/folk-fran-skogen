@@ -29,8 +29,8 @@
 .modal-inner {
   background-color: var(--color-card-bg);
   border-radius: 16px;
-  max-width: calc(500px + 2rem);
-  margin: 1rem;
+  max-width: calc(540px + 2rem);
+  margin: 2rem 1rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -63,6 +63,10 @@
     &::after {
       right: 12px;
       bottom: -16px;
+    }
+    &:focus-visible {
+      outline: 2px solid;
+      outline-offset: 8px;
     }
   }
 

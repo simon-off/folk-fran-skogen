@@ -7,6 +7,7 @@ const modal = document.createElement("div");
 modal.classList.add("modal");
 
 const fadeOut = () => {
+  document.body.style.overflow = "auto";
   modal.classList.add("fade-out");
   modal.ontransitionend = () => {
     if (modal.classList.contains("fade-out")) {
@@ -44,6 +45,7 @@ for (let artist of lineUp) {
   `;
 
   galleryItem.addEventListener("click", () => {
+    document.body.style.overflow = "hidden";
     modal.classList.remove("fade-out");
     modal.classList.add("visible");
     modal.innerHTML = `
