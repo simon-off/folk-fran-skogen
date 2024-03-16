@@ -1,5 +1,14 @@
 const lineUp = [
   {
+    name: "DALMATIN",
+    description: `I höstas slog Sveriges nya pop-sensation Dalmatin ned som en bomb från ingenstans. Trion inledde 2024 med att släppa debut-EP:n ’’Dagarna & kvällarna’’, nomineras till ’’Årets genombrott’’ i Gaffa-priset och rotera på P3 med låten ’’Festival’’.
+
+      I vår kommer debutalbumet och sommarturnén är ett faktum. Bli en av dom som såg Dalmatin första gången i Småland.`,
+    img: "dalmatin.jpg",
+    instagramUrl: "https://www.instagram.com/dalmatinband/",
+    spotifyUrl: "https://open.spotify.com/artist/6Fydl2UeADvnfloGHWW4uJ",
+  },
+  {
     name: "GRIM",
     description: `GRIM är artistnamnet för låtskrivaren och sångaren Alvin Blomberg. Den första mars släpptes hans självbetitlade debutalbum. 
 
