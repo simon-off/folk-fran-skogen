@@ -1,5 +1,15 @@
 const lineUp = [
   {
+    name: "VILMA FLOOD",
+    description: `Sedan debutalbumet ”Moodswinger”, som hyllades unisont av svensk press 2019, har Vilma Flood setts flitigt turnerande, med höjdpunkter som ett utsålt Fasching i Stockholm, Dalhalla och finsmakarfestivalen Sthlm Americana, samt som gäst till Moonica Mac ihop med Sara Parkman i Så Mycket Bättre.
+  
+      Till Gullabo kommer årets headline-akt Vilma Flood med fullband, ett episkt avslut på festivalen. `,
+    img: "vilma-flood.jpg",
+    instagramUrl: "https://www.instagram.com/vilmaflood/",
+    spotifyUrl:
+      "https://open.spotify.com/artist/34mQpvCjyifYcrScoIlcmW?si=HwK1vFOVTnePoIzIhS7k-A ",
+  },
+  {
     name: "DALMATIN",
     description: `I höstas slog Sveriges nya pop-sensation Dalmatin ned som en bomb från ingenstans. Trion inledde 2024 med att släppa debut-EP:n ’’Dagarna & kvällarna’’, nomineras till ’’Årets genombrott’’ i Gaffa-priset och rotera på P3 med låten ’’Festival’’.
 
@@ -18,7 +28,7 @@ const lineUp = [
     spotifyUrl: "https://open.spotify.com/artist/0MokmTSYVP7JttFUbXX6W7",
   },
   {
-    name: "Svalarna",
+    name: "SVALARNA",
     description: `Svalarna bjuder in till en värld där fascinationen för det övernaturliga möter ömtåligheten av ett helt vanligt människohjärta. 
   
       I sommar samlas en brokig skara musiker från olika bakgrund där jazz, folk och klassisk musik skapar en genreöverskridande atmosfär. Dröm fritt och låt Svalarna leda dig till något oupptäckt.`,
