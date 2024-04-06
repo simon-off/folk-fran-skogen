@@ -28,6 +28,15 @@ const lineUp = [
     spotifyUrl: "https://open.spotify.com/artist/0MokmTSYVP7JttFUbXX6W7",
   },
   {
+    name: "WILMA HOLMES",
+    description: `Wilma Holmes karaktäristiska röst som rotar sig i kulning och popmusikens melodikänsla, är nu redo att höras över hela världen. Debutalbumet 'Intruder' släpps i maj, en debut som tydligt porträtterar Holmes obevekliga nyfikenhet, och som vandrar från det mörkaste mörkret till ljuset i slutet av tunneln. 
+  
+      I sommar åker hon ut på release-turné och gör sin allra första festivalspelning hos oss i Gullabo.`,
+    img: "wilma-holmes.jpg",
+    instagramUrl: "https://www.instagram.com/wilmaaholmes/",
+    spotifyUrl: "https://open.spotify.com/artist/2O0pWoVhWXSByvqyxGvr7Z",
+  },
+  {
     name: "SVALARNA",
     description: `Svalarna bjuder in till en värld där fascinationen för det övernaturliga möter ömtåligheten av ett helt vanligt människohjärta. 
   
