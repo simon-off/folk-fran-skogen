@@ -25,3 +25,6 @@ dist-ssr
 
 # Build related
 public_html
+
+# Secret stuff
+secret
