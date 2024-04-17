@@ -10,8 +10,18 @@ header {
     padding-top: 2rem;
     & > nav {
       order: 1;
-      padding: 8rem 0 2rem 0;
+      padding-block: 2rem;
     }
+
+    .hero-section {
+      min-height: calc(100vh - 2rem);
+    }
+  }
+
+  .hero-section {
+    display: grid;
+    place-content: center;
+    gap: 2rem;
   }
 
   ul {
@@ -92,14 +102,14 @@ header {
   gap: 1.5rem;
   text-align: center;
 
+  i {
+    color: var(--color-card-text);
+  }
+
   .date {
     font-size: 2.5rem;
-    color: var(--color-accent-red);
-    padding-top: 0rem;
-
-    @media screen and (max-width: 720px) {
-      padding-top: 1rem;
-    }
+    color: var(--color-off-white);
+    filter: drop-shadow(0 0 32px rgba(0, 150, 255, 0.35));
   }
 
   .button {
