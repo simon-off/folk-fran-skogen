@@ -46,6 +46,17 @@ const lineUp = [
     spotifyUrl: "https://open.spotify.com/artist/3Ccd7Fr6wNkGfifwE4rm1m",
   },
   {
+    name: "TIGER & TRÄDEN",
+    description: `Tiger & Träden återvänder till Gullabo med nya låtar i repertoaren och löftet att återskapa förra årets musikaliska urladdning gånger 100.
+  
+      Under 2024 släpper Tiger & Träden sitt tredje album titulerat “Små låtar CD 2”. Albumet är en fortsättning av utforskandet och utvidgandet av det kreativa universum som är Tiger & Träden. Texterna är små berättelser som på ytan ofta svävar lätt men på djupet tyngs av blodigt allvar. De ljudliga produktionerna speglar artistens inre som till hälften består av apatiskt lugn och till hälften av hysteriska känslostormar.
+  
+      Tiger & Träden består av Jonathan Lundén med vänner och tillsammans kommer de till Folk från skogen 2024 för att ge er sitt allt och lite till.`,
+    img: "tiger.jpg",
+    instagramUrl: "https://www.instagram.com/tigerochtraden/",
+    spotifyUrl: "https://open.spotify.com/artist/0DTpsTLFViygxRyO94uDql",
+  },
+  {
     name: "ISABEL NEIB",
     description: `Isabel Neib är artisten och producenten från Sundsvall som släppte sitt hyllade debutalbum “I Already Know” 24 November 2023. GAFFA skriver: “Isabel Neib kliver fram som artist i sin egen rätt. Resultatet är en väl slipad och personlig resa.” 
     
