@@ -19,6 +19,15 @@ const lineUp = [
     spotifyUrl: "https://open.spotify.com/artist/6Fydl2UeADvnfloGHWW4uJ",
   },
   {
+    name: "DIANE EMERITA",
+    description: `Diane Emerita har den fängslande förmågan att fånga ärlighet med sin djupa och emotionellt laddade röst. Ändå är det hennes kompletterande fantasifulla pianospel som skapar grunden till hennes äventyrliga och råa sound.
+  
+      Våren 2024 är Diane aktuell med release av sin EP “Travelling Forever”, ett samarbete med den tidigare grammisnominerade producenten Hampus Norén om en resa Diane behövde ta för att hitta djupet i sin röst. I sommar får vi ta del av detta ute i skogen!`,
+    img: "diane-emerita.jpg",
+    instagramUrl: "https://www.instagram.com/dianeemerita/",
+    spotifyUrl: "https://open.spotify.com/artist/3LhfJfuhr6OZLHrpCXIyuH",
+  },
+  {
     name: "GRIM",
     description: `GRIM är artistnamnet för låtskrivaren och sångaren Alvin Blomberg. Den första mars släpptes hans självbetitlade debutalbum. 
 
