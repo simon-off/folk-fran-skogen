@@ -1,21 +1,22 @@
 header {
-  padding-top: 2rem;
   padding-bottom: var(--section-padding-bottom);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
 
   @media screen and (max-width: 720px) {
-    padding-top: 2rem;
     & > nav {
       order: 1;
-      padding-block: 2rem;
     }
 
     .hero-section {
-      min-height: calc(100vh - 2rem);
+      min-height: calc(100vh);
+      min-height: calc(100dvh);
     }
+  }
+
+  & > nav {
+    padding-block: 2rem;
   }
 
   .hero-section {
