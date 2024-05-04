@@ -76,6 +76,15 @@ const lineUp = [
     instagramUrl: "https://www.instagram.com/isabelneib/",
     spotifyUrl: "https://open.spotify.com/artist/7hsUdPSrlTdl9cHyGl7KL5",
   },
+  {
+    name: "EDVIN ELMER",
+    description: `Edvin elmer är sångaren och multi-instrumentalisten som med sin unika blandning av alternativ rock, indie och postpunk ses på hemmaplan för första gången hos oss i sommar. 
+  
+      Ryktet säger att ilskan kommer att höras till Blekingegränsen.`,
+    img: "edvin-elmer.jpg",
+    instagramUrl: "https://www.instagram.com/edvinelmer/",
+    spotifyUrl: "https://open.spotify.com/artist/6PSWgyFerbKnVyD1jhc4QN",
+  },
 ];
 
 export default lineUp;
