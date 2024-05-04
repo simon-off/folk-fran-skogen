@@ -78,7 +78,7 @@ const lineUp = [
   },
   {
     name: "EDVIN ELMER",
-    description: `Edvin elmer är sångaren och multi-instrumentalisten som med sin unika blandning av alternativ rock, indie och postpunk ses på hemmaplan för första gången hos oss i sommar. 
+    description: `edvin elmer är sångaren och multi-instrumentalisten som med sin unika blandning av alternativ rock, indie och postpunk ses på hemmaplan för första gången hos oss i sommar. 
   
       Ryktet säger att ilskan kommer att höras till Blekingegränsen.`,
     img: "edvin-elmer.jpg",
