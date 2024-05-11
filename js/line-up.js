@@ -85,6 +85,15 @@ const lineUp = [
     instagramUrl: "https://www.instagram.com/edvinelmer/",
     spotifyUrl: "https://open.spotify.com/artist/6PSWgyFerbKnVyD1jhc4QN",
   },
+  {
+    name: "ETERNAL WONDER",
+    description: `Eternal Wonder är Albin Appelqvist, en Psytrance-producent och DJ från Torsås.
+  
+      Förra årets topp var när dagen mötte natten och musiken fick hela skogen att dansa in i hans universum. FOLK FRÅN SKOGEN älskar Eternal wonder, stanna kvar tills vildsvinen vaknar så kommer du att förstå varför.`,
+    img: "eternal-wonder.jpg",
+    instagramUrl: "https://www.instagram.com/eternalwonderofficial/",
+    spotifyUrl: "https://open.spotify.com/artist/2xwC2G9ccAaNFqzebuwszJ",
+  },
 ];
 
 export default lineUp;
