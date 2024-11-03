@@ -1,7 +1,9 @@
-import lineUp from "./line-up.js";
+import lineUps from "./line-ups.js";
+import { observe } from "./scroll.js";
 
 const galleryElement = document.querySelector(".gallery");
 const lineUpSection = document.querySelector("#line-up");
+const lineUpYears = document.querySelector(".line-up-years");
 
 const modal = document.createElement("div");
 modal.classList.add("modal");
@@ -31,53 +33,82 @@ document.addEventListener("keydown", (e) => {
 
 lineUpSection.appendChild(modal);
 
-for (let artist of lineUp) {
-  const galleryItem = document.createElement("button");
-  galleryItem.classList.add(
-    "gallery-item",
-    "observe",
-    "scale-subtle",
-    "duration-6"
-  );
-  galleryItem.innerHTML = `
-  <img src="./images/artists/${artist.img}" alt="${artist.name}"/>
-  <p><span>${artist.name} | </span>${artist.description}</p>
+function renderLineUp(lineUp) {
+  galleryElement.innerHTML = "";
+
+  if (lineUp.length === 0) {
+    galleryElement.innerHTML = /*html*/ `<p class="no-line-up">To be announced...</p>`;
+  }
+
+  for (let artist of lineUp) {
+    const galleryItem = document.createElement("button");
+    galleryItem.classList.add(
+      "gallery-item",
+      "observe",
+      "scale-subtle",
+      "duration-6"
+    );
+    galleryItem.innerHTML = /*html*/ `
+    <img src="./images/artists/${artist.img}" alt="${artist.name}"/>
+    <p><span>${artist.name} | </span>${artist.description}</p>
   `;
 
-  galleryItem.addEventListener("click", () => {
-    document.body.style.overflow = "hidden";
-    modal.classList.remove("fade-out");
-    modal.classList.add("visible");
-    modal.innerHTML = `
-    <div class="modal-inner">
-      <button><img src="./logos/cross.svg" alt="close button"/></button>
-      <img src="./images/artists/${artist.img}" alt="${artist.name}"/>
-      <div class="modal-header">
-        <h3>${artist.name}</h3>
-        <div class="links">
-          <a target="_blank" href="${artist.instagramUrl}">
-            <img src="./logos/instagram.svg" alt="instagram logo"/>
-            instagram
-          </a>
-          ${
-            artist.spotifyUrl
-              ? `<a target="_blank" href="${artist.spotifyUrl}">
-            <img src="./logos/spotify.svg" alt="spotify logo"/>
-            spotify
-          </a>`
-              : ""
-          }
+    galleryItem.addEventListener("click", () => {
+      document.body.style.overflow = "hidden";
+      modal.classList.remove("fade-out");
+      modal.classList.add("visible");
+      modal.innerHTML = /*html*/ `
+      <div class="modal-inner">
+        <button><img src="./logos/cross.svg" alt="close button"/></button>
+        <img src="./images/artists/${artist.img}" alt="${artist.name}"/>
+        <div class="modal-header">
+          <h3>${artist.name}</h3>
+          <div class="links">
+            <a target="_blank" href="${artist.instagramUrl}">
+              <img src="./logos/instagram.svg" alt="instagram logo"/>
+              instagram
+            </a>
+            ${
+              artist.spotifyUrl
+                ? `<a target="_blank" href="${artist.spotifyUrl}">
+              <img src="./logos/spotify.svg" alt="spotify logo"/>
+              spotify
+            </a>`
+                : ""
+            }
+          </div>
         </div>
+        <p>${artist.description.replace(/\n/g, "<br>")}</p>
       </div>
-      <p>${artist.description.replace(/\n/g, "<br>")}</p>
-    </div>
     `;
-  });
+    });
 
-  galleryElement.appendChild(galleryItem);
+    galleryElement.appendChild(galleryItem);
+  }
 }
 
-if (lineUp.length === 0) {
-  document.querySelector("a[href='#line-up']").style.display = "none";
-  lineUpSection.style.display = "none";
+function renderYearButtons() {
+  const buttons = Object.keys(lineUps)
+    .reverse()
+    .map((year) => {
+      const button = document.createElement("button");
+      button.textContent = year;
+      button.addEventListener("click", () => {
+        for (const button of lineUpYears.children) {
+          button.classList.remove("active");
+        }
+        button.classList.add("active");
+        renderLineUp(lineUps[year]);
+
+        observe();
+      });
+
+      return button;
+    });
+
+  buttons[0].classList.add("active");
+  lineUpYears.append(...buttons);
 }
+
+renderYearButtons();
+renderLineUp(lineUps[2025]);

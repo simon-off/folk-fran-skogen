@@ -108,9 +108,23 @@ header {
   }
 
   .date {
+    --color-inner: #e96e61;
+    --color-outer: #b81a15;
+
+    color: #ffffff;
     font-size: 2.5rem;
-    color: var(--color-off-white);
-    filter: drop-shadow(0 0 32px rgba(0, 150, 255, 0.35));
+    // font-family: "Karla", sans-serif;
+
+    // prettier-ignore
+    // text-shadow:
+    //   0 0 7px #ffbfb7,
+    //   0 0 10px var(--color-inner),
+    //   0 0 21px var(--color-inner),
+    //   0 0 42px var(--color-outer),
+    //   0 0 82px var(--color-outer),
+    //   0 0 92px var(--color-outer),
+    //   0 0 102px var(--color-outer),
+    //   0 0 151px var(--color-outer);
   }
 
   .button {
@@ -121,7 +135,7 @@ header {
 #line-up {
   display: flex;
   flex-direction: column;
-  row-gap: 3rem;
+  row-gap: 1.5rem;
 
   hgroup {
     display: flex;
@@ -138,6 +152,33 @@ header {
       font-style: italic;
       margin-bottom: 0.5rem;
       margin-top: -0.5rem;
+    }
+  }
+
+  .line-up-years {
+    display: flex;
+    gap: 1rem;
+
+    button {
+      background: transparent;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--color-card-text);
+      padding: 0;
+      opacity: 0.5;
+      transition: all 1000ms ease;
+
+      &.active {
+        opacity: 1;
+      }
+
+      &:hover,
+      &:focus-visible {
+        opacity: 1;
+        color: var(--color-off-white);
+        transition-duration: var(--time-hover);
+      }
     }
   }
 
@@ -186,6 +227,7 @@ header {
     span {
       font-size: 1.25rem;
       line-height: 1;
+      text-transform: uppercase;
     }
   }
 }

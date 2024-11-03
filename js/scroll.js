@@ -16,7 +16,11 @@ const observer = new IntersectionObserver(
   { threshold: 0.25 }
 );
 
-const observeElements = document.querySelectorAll(".observe");
-for (let element of observeElements) {
-  observer.observe(element);
+export function observe() {
+  const observeElements = document.querySelectorAll(".observe");
+  for (let element of observeElements) {
+    observer.observe(element);
+  }
 }
+
+observe();
