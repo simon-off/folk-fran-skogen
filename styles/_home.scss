@@ -111,9 +111,9 @@ header {
     --color-inner: #e96e61;
     --color-outer: #b81a15;
 
-    color: #ffffff;
     font-size: 2.5rem;
-    // font-family: "Karla", sans-serif;
+    color: var(--color-off-white);
+    filter: drop-shadow(0 0 32px rgba(0, 150, 255, 0.45));
 
     // prettier-ignore
     // text-shadow:
