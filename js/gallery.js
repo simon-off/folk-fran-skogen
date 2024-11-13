@@ -107,7 +107,10 @@ function renderYearButtons() {
     });
 
   buttons[0].classList.add("active");
-  lineUpYears.append(...buttons);
+
+  for (const button of buttons) {
+    lineUpYears.appendChild(button);
+  }
 }
 
 renderYearButtons();
