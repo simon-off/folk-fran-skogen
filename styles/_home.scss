@@ -112,9 +112,6 @@ header {
   }
 
   .date {
-    --color-inner: hsl(6, 100%, 60%);
-    --color-outer: #a80600;
-
     font-size: 2.375rem;
     color: var(--color-off-white);
     color: #fff5f5;
@@ -123,13 +120,13 @@ header {
     // prettier-ignore
     text-shadow:
       0 0 7px #ff7866,
-      0 0 10px var(--color-inner),
-      0 0 21px var(--color-inner),
-      0 0 42px var(--color-outer),
-      0 0 82px var(--color-outer),
-      0 0 92px var(--color-outer),
-      0 0 102px var(--color-outer),
-      0 0 151px var(--color-outer);
+      0 0 10px #ff4733,
+      0 0 21px #ff4733,
+      0 0 42px #a80600,
+      0 0 82px #a80600,
+      0 0 92px #a80600,
+      0 0 102px #a80600,
+      0 0 151px #a80600;
   }
 
   .button {
