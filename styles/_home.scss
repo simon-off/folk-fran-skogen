@@ -103,32 +103,37 @@ header {
   gap: 1.5rem;
   text-align: center;
 
+  @media (min-width: 900px) {
+    gap: 2rem;
+  }
+
   i {
     color: var(--color-card-text);
   }
 
   .date {
-    --color-inner: #e96e61;
-    --color-outer: #b81a15;
+    --color-inner: hsl(6, 100%, 60%);
+    --color-outer: #a80600;
 
-    font-size: 2.5rem;
+    font-size: 2.375rem;
     color: var(--color-off-white);
+    color: #fff5f5;
     filter: drop-shadow(0 0 32px rgba(0, 150, 255, 0.45));
 
     // prettier-ignore
-    // text-shadow:
-    //   0 0 7px #ffbfb7,
-    //   0 0 10px var(--color-inner),
-    //   0 0 21px var(--color-inner),
-    //   0 0 42px var(--color-outer),
-    //   0 0 82px var(--color-outer),
-    //   0 0 92px var(--color-outer),
-    //   0 0 102px var(--color-outer),
-    //   0 0 151px var(--color-outer);
+    text-shadow:
+      0 0 7px #ff7866,
+      0 0 10px var(--color-inner),
+      0 0 21px var(--color-inner),
+      0 0 42px var(--color-outer),
+      0 0 82px var(--color-outer),
+      0 0 92px var(--color-outer),
+      0 0 102px var(--color-outer),
+      0 0 151px var(--color-outer);
   }
 
   .button {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 }
 
@@ -247,7 +252,7 @@ header {
     gap: 3rem;
     @media screen and (max-width: 900px) {
       grid-template-columns: 1fr;
-      grid-template-rows: 300px auto;
+      grid-template-rows: 400px auto;
       gap: 1rem;
     }
   }
@@ -255,7 +260,7 @@ header {
   .picture {
     img {
       object-fit: cover;
-      object-position: 25% 65%;
+      object-position: 25% 55%;
       height: 100%;
       width: 100%;
       border-radius: 8px;

@@ -49,9 +49,9 @@ function renderLineUp(lineUp) {
       "duration-6"
     );
     galleryItem.innerHTML = /*html*/ `
-    <img src="./images/artists/${artist.img}" alt="${artist.name}"/>
-    <p><span>${artist.name} | </span>${artist.description}</p>
-  `;
+      <img src="./images/artists/${artist.img}" alt="${artist.name}"/>
+      <p><span>${artist.name} | </span>${artist.description}</p>
+    `;
 
     galleryItem.addEventListener("click", () => {
       document.body.style.overflow = "hidden";
@@ -64,13 +64,17 @@ function renderLineUp(lineUp) {
         <div class="modal-header">
           <h3>${artist.name}</h3>
           <div class="links">
-            <a target="_blank" href="${artist.instagramUrl}">
+            ${
+              artist.instagramUrl
+                ? /*html*/ `<a target="_blank" href="${artist.instagramUrl}">
               <img src="./logos/instagram.svg" alt="instagram logo"/>
               instagram
-            </a>
+            </a>`
+                : ""
+            }
             ${
               artist.spotifyUrl
-                ? `<a target="_blank" href="${artist.spotifyUrl}">
+                ? /*html*/ `<a target="_blank" href="${artist.spotifyUrl}">
               <img src="./logos/spotify.svg" alt="spotify logo"/>
               spotify
             </a>`
@@ -84,6 +88,7 @@ function renderLineUp(lineUp) {
     });
 
     galleryElement.appendChild(galleryItem);
+    observe();
   }
 }
 
@@ -99,8 +104,6 @@ function renderYearButtons() {
         }
         button.classList.add("active");
         renderLineUp(lineUps[year]);
-
-        observe();
       });
 
       return button;
