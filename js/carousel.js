@@ -4,6 +4,8 @@ const imageElements = pictureElement.querySelectorAll("img");
 const prevButtonElement = carouselElement.querySelector(".prev");
 const nextButtonElement = carouselElement.querySelector(".next");
 
+const initialWidth = window.outerWidth;
+
 pictureElement.style.setProperty("--image-count", imageElements.length);
 
 let index = 0;
@@ -33,6 +35,8 @@ nextButtonElement.addEventListener("click", () => {
 });
 
 window.addEventListener("resize", () => {
+  if (window.outerWidth === initialWidth) return;
+
   imageElements
     .item(index)
     ?.scrollIntoView({ behavior: "instant", block: "nearest" });
