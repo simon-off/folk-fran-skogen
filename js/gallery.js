@@ -49,7 +49,7 @@ function renderLineUp(lineUp) {
       "duration-6"
     );
     galleryItem.innerHTML = /*html*/ `
-      <img src="./images/artists/${artist.img}" alt="${artist.name}"/>
+      <img src="./images/${artist.img}" alt="${artist.name}"/>
       <p><span>${artist.name} | </span>${artist.description}</p>
     `;
 
@@ -60,7 +60,7 @@ function renderLineUp(lineUp) {
       modal.innerHTML = /*html*/ `
       <div class="modal-inner">
         <button><img src="./logos/cross.svg" alt="close button"/></button>
-        <img src="./images/artists/${artist.img}" alt="${artist.name}"/>
+        <img src="./images/${artist.img}" alt="${artist.name}"/>
         <div class="modal-header">
           <h3>${artist.name}</h3>
           <div class="links">
