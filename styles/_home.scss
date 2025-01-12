@@ -255,13 +255,96 @@ header {
     }
   }
 
+  .carousel {
+    display: grid;
+    align-items: center;
+
+    @media (min-width: 700px) {
+      &:hover,
+      &:focus-visible {
+        button {
+          opacity: 1;
+        }
+      }
+
+      button {
+        opacity: 0.5;
+      }
+    }
+
+    button {
+      grid-area: 1/1/2/2;
+      z-index: 1;
+      padding: 16px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      transition: opacity 250ms ease;
+
+      &:focus-visible {
+        opacity: 1;
+      }
+
+      &:disabled {
+        opacity: 0.5;
+      }
+
+      &.prev {
+        justify-self: flex-start;
+        padding-left: 0;
+
+        svg {
+          border-radius: 0 32px 32px 0;
+          border-left: none;
+          padding-left: 4px;
+        }
+      }
+
+      &.next {
+        justify-self: flex-end;
+        padding-right: 0;
+
+        svg {
+          border-radius: 32px 0 0 32px;
+          border-right: none;
+          padding-right: 4px;
+        }
+      }
+
+      svg {
+        box-sizing: content-box;
+        height: 20px;
+        width: 20px;
+        padding: 8px;
+        border: 1px solid var(--color-card-text);
+        stroke: var(--color-off-white);
+        background-color: #0f3654be;
+      }
+    }
+  }
+
   .picture {
+    grid-area: 1/1/2/2;
+    display: grid;
+    grid-template-columns: repeat(var(--image-count), 100%);
+    grid-template-rows: 100%;
+    height: 100%;
+    border-radius: 8px;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
     img {
       object-fit: cover;
-      object-position: 25% 55%;
       height: 100%;
       width: 100%;
-      border-radius: 8px;
+      scroll-snap-align: center;
     }
   }
 
