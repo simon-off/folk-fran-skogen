@@ -175,7 +175,15 @@ const lineUps = {
       spotifyUrl: "https://open.spotify.com/artist/2xwC2G9ccAaNFqzebuwszJ",
     },
   ],
-  2025: [],
+  2025: [
+    {
+      name: "DIKET",
+      description: `Har du någon gång varit osäker på om du är pollenallergisk eller bara ledsen? Eller har du kanske fastnat i en fantasi om att få flytta bort från allt och ut i skogen, kanske till en fäbod, börja odla lök? Eller intalar du dig, på nytt, varje höst om att du ska skärpa dig, bli en bättre, snällare, godare människa?`,
+      img: "lineup/2025/diket.jpg",
+      instagramUrl: "https://www.instagram.com/diket_band/",
+      spotifyUrl: "https://open.spotify.com/artist/31IA4hknl229POTnnzdrLv",
+    },
+  ],
 };
 
 export default lineUps;
