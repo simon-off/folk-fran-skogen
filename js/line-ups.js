@@ -177,6 +177,15 @@ const lineUps = {
   ],
   2025: [
     {
+      name: "OLE KIRKENG",
+      description: `Ole Kirkeng gjorde stort avtryck på den norska musikscenen med sin EP Rocking Chair från 2021, som vann Spellemannprisen (norska Grammis) för bästa countryalbum.
+
+      En varm kram av americana, folk och country, med ärliga texter och ett tidlöst sound.`,
+      img: "lineup/2025/ole-kirkeng.jpg",
+      instagramUrl: "https://www.instagram.com/olekirkeng/",
+      spotifyUrl: "https://open.spotify.com/artist/4fdAc8PI8T00hIEYVWiDhf",
+    },
+    {
       name: "DIKET",
       description: `Har du någon gång varit osäker på om du är pollenallergisk eller bara ledsen? Eller har du kanske fastnat i en fantasi om att få flytta bort från allt och ut i skogen, kanske till en fäbod, börja odla lök? Eller intalar du dig, på nytt, varje höst om att du ska skärpa dig, bli en bättre, snällare, godare människa?`,
       img: "lineup/2025/diket.jpg",
