@@ -177,6 +177,15 @@ const lineUps = {
   ],
   2025: [
     {
+      name: "MY DEAR COMPANION",
+      description: `Med en blandning av skönhet och riv tar My Dear Companion sin unika tolkning av country och americana till Gullabo i sommar. 
+    
+      Trion bjuder på trestämmig sång vackert ackompanjerad av banjo, gitarr och cittra. Musiken väcker nostalgi och glädje och lämnar få oberörda.`,
+      img: "lineup/2025/my-dear-companion.jpg",
+      instagramUrl: "https://www.instagram.com/mydearcompanion/",
+      spotifyUrl: "https://open.spotify.com/artist/4rCC8N3QkRNz9uoVVNdmnI",
+    },
+    {
       name: "OLE KIRKENG",
       description: `Ole Kirkeng gjorde stort avtryck på den norska musikscenen med sin EP Rocking Chair från 2021, som vann Spellemannprisen (norska Grammis) för bästa countryalbum.
 
