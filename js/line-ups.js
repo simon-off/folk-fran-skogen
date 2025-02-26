@@ -177,6 +177,15 @@ const lineUps = {
   ],
   2025: [
     {
+      name: "LAGUN",
+      description: `Poppigt, drömskt och glasklart. Sedan debuten 2020 har indieduon Lagun hyllats för sin majestätiska pop. Våren 2024 släppte de det efterlängtade debutalbumet Walking with Lola, fyllt av reverbdränkta slidegitarrer, blåsinstrument och delikata körarrangemang. 
+    
+      Med rå sårbarhet och explosiv nerv trollbinder de sin publik - och till skogen kommer de med fullband`,
+      img: "lineup/2025/lagun.jpg",
+      instagramUrl: "https://www.instagram.com/lagunmusic/",
+      spotifyUrl: "https://open.spotify.com/artist/6jlRWODN47o8tTKutTBRpz",
+    },
+    {
       name: "MY DEAR COMPANION",
       description: `Med en blandning av skönhet och riv tar My Dear Companion sin unika tolkning av country och americana till Gullabo i sommar. 
     
